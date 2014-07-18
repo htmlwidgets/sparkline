@@ -26,7 +26,8 @@ sparkline(x, type = 'box')
 
 You can also use it in an R Markdown document.
 
-  ---
+
+	---
 	title: "jquery Sparkline HTML Widget"
 	author: "Ramnath Vaidyanathan"
 	date: "July 18, 2014"
