@@ -1,0 +1,10 @@
+dependencies:
+  - name: jquery
+    version: 2.1.1
+    src: "lib"
+    script: jquery.min.js
+  - name: jquery-sparkline
+    version: 2.1.2
+    src: "lib"
+    script: jquery.sparkline.min.js
+

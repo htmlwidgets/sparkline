@@ -1,0 +1,1 @@
+$('#' + payload.id).sparkline('html', payload.options)  
