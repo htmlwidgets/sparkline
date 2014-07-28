@@ -2,7 +2,8 @@
 #' @import htmltools
 #' @import htmlwidgets
 sparkline <- function(values, ..., width = 60, height = 20){
-  params = list(values = paste(values, collapse = ','), 
+  params = list(
+    values = values, 
     options = list(..., height = height, width = width), 
     width = width , height = height
   )
