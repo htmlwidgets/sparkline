@@ -11,6 +11,6 @@ sparkline <- function(values, ..., width = 60, height = 20){
 }
 
 #' @export
-widget_div.sparkline <- function(x, id, class, style){
-  tags$span(id = id, class = class, x$values)
+widget_html.sparkline <- function(x, id, class, style){
+  tags$span(id = id, class = class)
 }
