@@ -10,7 +10,7 @@ You can install from github
 library(devtools)
 install_github('rstudio/htmltools')
 install_github('ramnathv/htmlwidgets')
-install_github('ramnathv/sparkline')
+install_github('htmlwidgets/sparkline')
 ```
 
 ### Usage
