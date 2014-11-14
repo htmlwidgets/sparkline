@@ -1,0 +1,21 @@
+---
+title: "jquery Sparkline HTML Widget"
+author: "Ramnath Vaidyanathan"
+date: "July 18, 2014"
+output:
+  html_document:
+    keep_md: yes
+    self_contained: no
+---
+
+```{r}
+library(htmlwidgets)
+library(sparkline)
+set.seed(1234)
+x = rnorm(10)
+y = rnorm(10)
+```
+
+
+Inline line graphs `r sparkline(x)`
+

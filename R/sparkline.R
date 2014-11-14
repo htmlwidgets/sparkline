@@ -8,10 +8,16 @@ sparkline <- function(values, ..., width = 60, height = 20){
     width = width , height = height
   )
   params = Filter(Negate(is.null), params)
-  structure(params, class = c('sparkline', 'htmlwidget'))
+  htmlwidgets::createWidget('sparkline', params,
+    width = width,
+    height = height,
+    sizingPolicy = htmlwidgets::sizingPolicy(
+      viewer.fill = FALSE 
+    )
+  )
 }
 
 #' @export
-widget_html.sparkline <- function(x, id, class, style){
+sparkline_html <- function(id, style, class, ...){
   tags$span(id = id, class = class)
 }
