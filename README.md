@@ -8,8 +8,6 @@ You can install from github
 
 ```r
 library(devtools)
-install_github('rstudio/htmltools')
-install_github('ramnathv/htmlwidgets')
 install_github('htmlwidgets/sparkline')
 ```
 
