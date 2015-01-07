@@ -21,3 +21,14 @@ sparkline <- function(values, ..., width = 60, height = 20){
 sparkline_html <- function(id, style, class, ...){
   tags$span(id = id, class = class)
 }
+
+#' @export
+sparklineOutput <- function(outputId, width = "60px", height = "20px") {
+  htmlwidgets::shinyWidgetOutput(outputId, "sparkline", width, height)
+}
+
+#' @export
+renderSparkline <- function(expr, env = parent.frame(), quoted = FALSE) {
+  if (!quoted) { expr <- substitute(expr) } # force quoted
+  htmlwidgets::shinyRenderWidget(expr, sparklineOutput, env, quoted = TRUE)
+}
