@@ -7,3 +7,4 @@ Author: Ramnath Vaidyanathan
 Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
 Description: jQuery Sparkline HTML widget for R
 License: MIT
+Depends: htmlwidgets
