@@ -8,3 +8,4 @@ Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
 Description: jQuery Sparkline HTML widget for R
 Imports: htmlwidgets
 License: MIT
+Depends: htmlwidgets
