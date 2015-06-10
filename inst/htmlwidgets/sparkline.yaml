@@ -7,4 +7,4 @@ dependencies:
     version: 2.1.2
     src: "lib"
     script: jquery.sparkline.min.js
-
+    stylesheet: tooltip.fix.css
