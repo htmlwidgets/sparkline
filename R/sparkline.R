@@ -1,7 +1,7 @@
 #' @export
 #' @import htmltools
 #' @import htmlwidgets
-sparkline <- function(values, ..., width = 60, height = 20){
+sparkline <- function(values, ..., width = 60, height = 20, elementId = NULL){
   params = list(
     values = values, 
     options = list(..., height = height, width = width), 
@@ -13,7 +13,8 @@ sparkline <- function(values, ..., width = 60, height = 20){
     height = height,
     sizingPolicy = htmlwidgets::sizingPolicy(
       viewer.fill = FALSE 
-    )
+    ),
+    elementId = elementId
   )
 }
 
