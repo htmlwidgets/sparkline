@@ -1,11 +1,13 @@
 #' @export
 #' @import htmltools
 #' @import htmlwidgets
-sparkline <- function(values, ..., width = 60, height = 20, elementId = NULL){
+sparkline <- function(values, ..., width = 60, height = 20,
+                      elementId = NULL, renderSelector = NULL){
   params = list(
     values = values, 
     options = list(..., height = height, width = width), 
-    width = width , height = height
+    width = width , height = height,
+    renderSelector = renderSelector
   )
   params = Filter(Negate(is.null), params)
   htmlwidgets::createWidget('sparkline', params,
