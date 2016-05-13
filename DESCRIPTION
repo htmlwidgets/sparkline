@@ -1,10 +1,15 @@
 Package: sparkline
 Type: Package
 Title: jQuery Sparkline HTML widget for R
-Version: 1.0
-Date: 2014-07-18
+Version: 2.0
+Date: 2016-05-12
 Author: Ramnath Vaidyanathan
 Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
 Description: jQuery Sparkline HTML widget for R
-Imports: htmlwidgets
+Imports:
+    htmltools,
+    htmlwidgets
+Suggests:
+    shiny
 License: MIT
+RoxygenNote: 5.0.1
