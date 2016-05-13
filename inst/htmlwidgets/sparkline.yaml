@@ -1,10 +1,9 @@
 dependencies:
   - name: jquery
-    version: 2.1.1
-    src: "lib"
+    version: 1.11.3
+    src: "htmlwidgets/lib/jquery"
     script: jquery.min.js
   - name: jquery-sparkline
     version: 2.1.2
-    src: "lib"
+    src: "htmlwidgets/lib/jquery.sparkline"
     script: jquery.sparkline.min.js
-
