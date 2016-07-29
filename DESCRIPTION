@@ -2,8 +2,16 @@ Package: sparkline
 Type: Package
 Title: jQuery Sparkline HTML widget for R
 Version: 2.0
-Date: 2016-05-12
-Author: Ramnath Vaidyanathan
+Date: 2016-07-29
+Authors@R: c(
+    person("Ramnath", "Vaidyanathan", email = "ramnath.vaidya@gmail.com", role = c("aut", "cre")),
+    person("Kent", "Russell", email = "kent.russell@timelyportfolio.com", role = c("aut", "ctb")),
+    person("Gareth", "Watts", role = c("aut", "cph"), comment = "jquery.sparkline library in htmlwidgets/lib, https://github.com/gwatts/jquery.sparkline"),
+    person(family = "jQuery Foundation", role = "cph", comment = "jQuery library"),
+    person(family = "jQuery contributors", role = c("ctb", "cph"),
+      comment = "jQuery library; authors listed in inst/htmlwidgets/lib/jquery/jquery-AUTHORS.txt"
+    )
+  )
 Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
 Description: jQuery Sparkline HTML widget for R
 Imports:
