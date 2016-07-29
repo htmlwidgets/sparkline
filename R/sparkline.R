@@ -1,6 +1,18 @@
-#' @export
-#' @import htmltools
+#' Interactive Sparklines
+#' 
+#' Create interactive sparklines for inline visualization.
+#'
+#' @param values \code{vector} of values to visualize
+#' @param ... additional options passed to \code{jquery.sparkline};  see
+#'          \link{http://omnipotent.net/jquery.sparkline/#common}{jquery.sparkline docs}
+#' @param height,width  height and width of sparkline htmlwidget
+#'          specified in any valid \code{CSS} size unit.
+#' @param elementId \code{string} id as a valid \code{CSS} element id.
+#' @param renderSelector \code{string} as \code{CSS} selector to render
+#'          in a DOM element other than the \code{htmlwidget} container
+#'
 #' @import htmlwidgets
+#' @export
 sparkline <- function(values, ..., width = 60, height = 20,
                       elementId = NULL, renderSelector = NULL){
   params = list(
@@ -21,7 +33,7 @@ sparkline <- function(values, ..., width = 60, height = 20,
 }
 
 sparkline_html <- function(id, style, class, ...){
-  tags$span(id = id, class = class)
+  htmltools::tags$span(id = id, class = class)
 }
 
 #' Shiny bindings for sparkline
