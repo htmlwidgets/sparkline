@@ -18,6 +18,9 @@ Imports:
     htmltools,
     htmlwidgets
 Suggests:
-    shiny
+    shiny,
+    knitr,
+    rmarkdown
 License: MIT
 RoxygenNote: 5.0.1
+VignetteBuilder: knitr

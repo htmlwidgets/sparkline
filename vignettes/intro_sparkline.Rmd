@@ -2,10 +2,11 @@
 title: "jquery Sparkline HTML Widget"
 author: "Ramnath Vaidyanathan"
 date: "July 18, 2014"
-output:
-  html_document:
-    keep_md: yes
-    self_contained: no
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Sparkline}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
 
 ```{r}
