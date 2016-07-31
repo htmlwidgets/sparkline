@@ -20,3 +20,11 @@ y = rnorm(10)
 
 Inline line graphs `r sparkline(x)`
 
+Bar charts  `r sparkline(abs(x), type = 'bar')`  negative values: `r sparkline(x, type = 'bar')`
+
+### Include in tables
+
+| Stock | Sparkline         | Boxplot  
+|-------|-------------------|--------
+| x     | `r sparkline(x)`  | `r sparkline(x, type ='box')`
+| y     | `r sparkline(y)`  | `r sparkline(y, type ='box')`
