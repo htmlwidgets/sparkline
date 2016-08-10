@@ -2,10 +2,14 @@ HTMLWidgets.widget({
   name: "sparkline",
   type: "output",
   factory: function(el, width, height) {
-
+    
+    var instance = {};
+    
     return {
 
       renderValue: function(data) {
+        
+        $(el).empty();
 
         // if renderTag provided then we will do three things
         //   1.  set height and width to 0 and display none
@@ -35,6 +39,8 @@ HTMLWidgets.widget({
             $(el).sparkline(spk.values,spk.options);
           });
         }
+        
+        instance.data = data;
       },
 
       resize: function(width, height) {
@@ -43,6 +49,7 @@ HTMLWidgets.widget({
         //  I think nothing for now
         //  but will need to get a feel for use cases
         //  where this is important such as slides, flexdashboard, tabset
+        this.renderValue(instance.data);
 
       }
 
