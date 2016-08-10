@@ -33,7 +33,7 @@ sparkline(1:100, type="bar", height=200, width=600)
 ## tristate
 
 ```{r}
-sparkline(c(1,1,0,1,-1,-1,1,-1,0,0,1,1),type="tristate",barWidth=5,barSpacing=2,width=200)
+sparkline(c(1,1,0,1,-1,-1,1,-1,0,0,1,1),type="tristate",barWidth=20,barSpacing=2,width=250,height=40)
 ```
 
 ## box
