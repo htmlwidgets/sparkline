@@ -7,7 +7,6 @@ output:
     center: yes
     highlight: pygments
     mathjax: null
-    self_contained: false
 ---
 
 ```{r setup, include=FALSE}

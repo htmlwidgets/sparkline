@@ -1,3 +1,5 @@
 .Rproj.user
 .Rhistory
 .RData
+inst/doc
+inst/examples/*_files/*.*
