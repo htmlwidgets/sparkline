@@ -7,6 +7,7 @@ output:
     center: yes
     highlight: pygments
     mathjax: null
+    self_contained: false
 ---
 
 ```{r setup, include=FALSE}
@@ -39,4 +40,16 @@ sparkline(c(1,1,0,1,-1,-1,1,-1,0,0,1,1),type="tristate",barWidth=20,barSpacing=2
 
 ```{r}
 sparkline(runif(100),type="box")
+```
+
+## bullet
+
+```{r}
+sparkline(c(10,12,12,9,7), type="bullet", width=200)
+```
+
+## discrete
+
+```{r}
+sparkline(c(4,6,7,7,4,3,2,1,4,4), type="discrete", width=200, height=100)
 ```
