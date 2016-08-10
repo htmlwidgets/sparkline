@@ -1,0 +1,43 @@
+---
+title: "sparklines in reveal.js"
+author: "Kenton Russell"
+date: "August 10, 2016"
+output: 
+  revealjs::revealjs_presentation:
+    center: yes
+    highlight: pygments
+    mathjax: null
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# tests
+
+## line
+
+```{r}
+library(sparkline)
+
+sparkline(1:100,type="line",height=200,width=400)
+```
+
+## bar
+
+```{r}
+sparkline(1:100, type="bar", height=200, width=600)
+```
+
+## tristate
+
+```{r}
+sparkline(c(1,1,0,1,-1,-1,1,-1,0,0,1,1),type="tristate",barWidth=5,barSpacing=2,width=200)
+```
+
+## box
+
+```{r}
+sparkline(runif(100),type="box")
+```
