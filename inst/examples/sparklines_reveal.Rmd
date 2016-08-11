@@ -53,3 +53,9 @@ sparkline(c(10,12,12,9,7), type="bullet", width=200)
 ```{r}
 sparkline(c(4,6,7,7,4,3,2,1,4,4), type="discrete", width=200, height=100)
 ```
+
+## pie
+
+```{r}
+sparkline(c(1,2,3), type="pie", height = 200)
+```

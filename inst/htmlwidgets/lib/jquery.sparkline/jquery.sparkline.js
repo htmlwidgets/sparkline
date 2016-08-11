@@ -2331,9 +2331,9 @@
             this.min = Math.min.apply(Math, values);
             this.max = Math.max.apply(Math, values);
             this.range = this.max - this.min;
-            width = options.get('width') === 'auto' ? values.length * 2 * this.target.devicePixelRatio : this.width;
+            width = options.get('width') === 'auto' ? values.length * 2 * this.target.ratio : this.width;
             //adjust width for pixel ratio
-            width = width * this.target.devicePixelRatio;
+            width = width * this.target.ratio;
             this.width = width;
             this.interval = Math.floor(width / values.length);
             this.itemWidth = width / values.length;
@@ -2439,7 +2439,7 @@
         },
 
         getRegion: function (el, x, y) {
-            var shapeid = this.target.getShapeAt(el, x, y);
+            var shapeid = this.target.getShapeAt(el, x * this.target.ratio, y * this.target.ratio);
             return (shapeid !== undefined && this.shapes[shapeid] !== undefined) ? this.shapes[shapeid] : undefined;
         },
 
@@ -2563,7 +2563,7 @@
         },
 
         getRegion: function (el, x, y) {
-            var shapeid = this.target.getShapeAt(el, x, y);
+            var shapeid = this.target.getShapeAt(el, x * this.target.ratio, y * this.target.ratio);
             return (shapeid !== undefined && this.shapes[shapeid] !== undefined) ? this.shapes[shapeid] : undefined;
         },
 
@@ -3295,7 +3295,7 @@
                 context.fill();
             }
             if (this.targetX !== undefined && this.targetY !== undefined &&
-                context.isPointInPath(this.targetX * this.target.ratio, this.targetY * this.target.ratio)) {
+                context.isPointInPath(this.targetX, this.targetY)) {
                 this.currentTargetShapeId = shapeid;
             }
         },
@@ -3305,7 +3305,7 @@
             context.beginPath();
             context.arc(x, y, radius, 0, 2 * Math.PI, false);
             if (this.targetX !== undefined && this.targetY !== undefined &&
-                context.isPointInPath(this.targetX * window.devicePixelRatio, this.targetY * window.devicePixelRatio)) {
+                context.isPointInPath(this.targetX, this.targetY)) {
                 this.currentTargetShapeId = shapeid;
             }
             if (lineColor !== undefined) {
@@ -3330,7 +3330,7 @@
                 context.fill();
             }
             if (this.targetX !== undefined && this.targetY !== undefined &&
-                context.isPointInPath(this.targetX * window.devicePixelRatio, this.targetY * window.devicePixelRatio)) {
+                context.isPointInPath(this.targetX, this.targetY)) {
                 this.currentTargetShapeId = shapeid;
             }
         },
