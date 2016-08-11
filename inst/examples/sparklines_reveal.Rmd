@@ -30,6 +30,15 @@ sparkline(1:100,type="line",height=200,width=400)
 sparkline(1:100, type="bar", height=200, width=600)
 ```
 
+## bar - stacked
+
+```{r}
+## buggy
+sparkline(c("10:4","2:3","3:2","4:10"),type="bar",height=200,width=400,barWidth=20,chartRangeMin=0,chartRangeMax=14)
+
+sparkline(list(list(10,4),list(2,3),list(3,2),list(4,10)), type="bar")
+```
+
 ## tristate
 
 ```{r}
