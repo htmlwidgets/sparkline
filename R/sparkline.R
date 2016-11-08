@@ -4,7 +4,7 @@
 #'
 #' @param values \code{vector} of values to visualize
 #' @param ... additional options passed to \code{jquery.sparkline};  see
-#'          \link{http://omnipotent.net/jquery.sparkline/#common}{jquery.sparkline docs}
+#'          \href{http://omnipotent.net/jquery.sparkline/#common}{jquery.sparkline docs}
 #' @param height,width  height and width of sparkline htmlwidget
 #'          specified in any valid \code{CSS} size unit.
 #' @param elementId \code{string} id as a valid \code{CSS} element id.

@@ -11,7 +11,7 @@ sparkline(values, ..., width = 60, height = 20, elementId = NULL,
 \item{values}{\code{vector} of values to visualize}
 
 \item{...}{additional options passed to \code{jquery.sparkline};  see
-\link{http://omnipotent.net/jquery.sparkline/#common}{jquery.sparkline docs}}
+\href{http://omnipotent.net/jquery.sparkline/#common}{jquery.sparkline docs}}
 
 \item{height, width}{height and width of sparkline htmlwidget
 specified in any valid \code{CSS} size unit.}
