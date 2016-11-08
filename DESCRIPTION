@@ -12,7 +12,7 @@ Authors@R: c(
       comment = "jQuery library; authors listed in inst/htmlwidgets/lib/jquery/jquery-AUTHORS.txt"
     )
   )
-Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
+Maintainer: Kent Russell <kent.russell@timelyportfolio.com>
 Description: Include interactive sparkline charts
     <http://omnipotent.net/jquery.sparkline> in 
     all R contexts with the convenience of 'htmlwidgets'.  
