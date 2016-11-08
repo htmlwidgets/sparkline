@@ -1,8 +1,8 @@
 Package: sparkline
 Type: Package
-Title: jQuery Sparkline HTML widget for R
+Title: 'jQuery' Sparkline 'htmlwidget'
 Version: 2.0
-Date: 2016-07-29
+Date: 2016-11-08
 Authors@R: c(
     person("Ramnath", "Vaidyanathan", email = "ramnath.vaidya@gmail.com", role = c("aut", "cre")),
     person("Kent", "Russell", email = "kent.russell@timelyportfolio.com", role = c("aut", "ctb")),
@@ -21,6 +21,6 @@ Suggests:
     shiny,
     knitr,
     rmarkdown
-License: MIT
+License: MIT + file LICENSE
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
