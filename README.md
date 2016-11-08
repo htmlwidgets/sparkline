@@ -1,10 +1,14 @@
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/sparkline)](https://cran.r-project.org/package=sparkline)
+
 ## Sparkline
 
-This is an experimental R package that provides support for [jquery sparkline](http://omnipotent.net/jquery.sparkline/#s-about) as a HTML widget.
+This is an R package that provides support for [jquery sparkline](http://omnipotent.net/jquery.sparkline/#s-about) as a [htmlwidget](http://htmlwidgets.org).
 
 ### Installation
 
-You can install from github
+`sparkline` is on CRAN, so you can `install.packages("sparkline")`.
+
+For the latest development version, please use `devtools::install_github("sparkline").
 
 ```r
 library(devtools)
@@ -13,7 +17,7 @@ install_github('htmlwidgets/sparkline')
 
 ### Usage
 
-The API is pretty simple
+The API is designed to be simple.
 
 ```r
 x = rnorm(20)
@@ -53,3 +57,6 @@ You can also use it in an R Markdown document.
 ![sparkline](http://i.imgur.com/B99qnBj.png)
 
 
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
