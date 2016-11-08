@@ -7,3 +7,4 @@ dependencies:
     version: 2.1.2
     src: "htmlwidgets/lib/jquery.sparkline"
     script: jquery.sparkline.js
+    stylesheet: jquery.sparkline.css
