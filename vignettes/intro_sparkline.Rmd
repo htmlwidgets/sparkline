@@ -1,0 +1,30 @@
+---
+title: "jquery Sparkline HTML Widget"
+author: "Ramnath Vaidyanathan"
+date: "July 18, 2014"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Sparkline}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(htmlwidgets)
+library(sparkline)
+set.seed(1234)
+x = rnorm(10)
+y = rnorm(10)
+```
+
+
+Inline line graphs `r sparkline(x)`
+
+Bar charts  `r sparkline(abs(x), type = 'bar')`  negative values: `r sparkline(x, type = 'bar')`
+
+### Include in tables
+
+| Stock | Sparkline         | Boxplot  
+|-------|-------------------|--------
+| x     | `r sparkline(x)`  | `r sparkline(x, type ='box')`
+| y     | `r sparkline(y)`  | `r sparkline(y, type ='box')`

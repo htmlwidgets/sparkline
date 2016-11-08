@@ -1,0 +1,70 @@
+---
+title: "sparklines in reveal.js"
+author: "Kenton Russell"
+date: "August 10, 2016"
+output: 
+  revealjs::revealjs_presentation:
+    center: yes
+    highlight: pygments
+    mathjax: null
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# tests
+
+## line
+
+```{r}
+library(sparkline)
+
+sparkline(1:100,type="line",height=200,width=400)
+```
+
+## bar
+
+```{r}
+sparkline(1:100, type="bar", height=200, width=600)
+```
+
+## bar - stacked
+
+```{r}
+## buggy
+sparkline(c("10:4","2:3","3:2","4:10"),type="bar",height=200,width=400,barWidth=20,chartRangeMin=0,chartRangeMax=14)
+
+sparkline(list(list(10,4),list(2,3),list(3,2),list(4,10)), type="bar")
+```
+
+## tristate
+
+```{r}
+sparkline(c(1,1,0,1,-1,-1,1,-1,0,0,1,1),type="tristate",barWidth=20,barSpacing=2,width=250,height=40)
+```
+
+## box
+
+```{r}
+sparkline(runif(100),type="box")
+```
+
+## bullet
+
+```{r}
+sparkline(c(10,12,12,9,7), type="bullet", width=200)
+```
+
+## discrete
+
+```{r}
+sparkline(c(4,6,7,7,4,3,2,1,4,4), type="discrete", width=200, height=100)
+```
+
+## pie
+
+```{r}
+sparkline(c(1,2,3), type="pie", height = 200)
+```
