@@ -13,7 +13,9 @@ Authors@R: c(
     )
   )
 Maintainer: Ramnath Vaidyanathan <ramnath.vaidya@gmail.com>
-Description: jQuery Sparkline HTML widget for R
+Description: Include interactive sparkline charts
+    <http://omnipotent.net/jquery.sparkline> in 
+    all R contexts with the convenience of 'htmlwidgets'.  
 Imports:
     htmltools,
     htmlwidgets
