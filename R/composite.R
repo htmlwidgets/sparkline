@@ -29,7 +29,7 @@ addComposite <- function(sparkline=NULL, sparklineToAdd=NULL, ...){
   # if ... are provided
   #   then use these for values and options
   if(length(list(...)) > 0) {
-    sparkline_options <- modifyList(sparkline_options,list(...))
+    sparkline_options <- utils::modifyList(sparkline_options,list(...))
   }
   
   sparkline_options$options$composite <- TRUE
