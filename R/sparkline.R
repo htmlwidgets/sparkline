@@ -41,6 +41,8 @@ sparkline <- function(values, ..., width = 60, height = 20,
 #'
 #' @import htmlwidgets htmltools
 #' @export
+#' 
+#' @example inst/examples/examples_dplyr.R
 
 spk_chr <- function(values, ..., width = 60, height = 20,
                       elementId = NULL, renderSelector = NULL){

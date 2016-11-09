@@ -28,4 +28,28 @@ in a DOM element other than the \code{htmlwidget} container}
 Create a character version ofinteractive sparklines
 for use with other 'htmlwidgets' or tags.
 }
+\examples{
+\dontrun{
+  #spk_chr works well with dplyr summarise
+  
+  library(dplyr)
+  library(sparkline)
+  
+  mtcars \%>\%
+    group_by(cyl) \%>\%
+    summarise(
+      hp = spk_chr(
+        hp, type="box",
+        chartRangeMin=0, chartRangeMax=max(mtcars$hp)
+      ),
+      mpg = spk_chr(
+        mpg, type="box",
+        chartRangeMin=0, chartRangeMax=max(mtcars$mpg)
+      )
+    ) \%>\%
+    formattable() \%>\%
+    formattable::as.htmlwidget() \%>\%
+    spk_add_deps()
+}
+}
 

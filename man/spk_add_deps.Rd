@@ -19,6 +19,7 @@ Add Sparkline Dependencies to Tag or 'htmlwidget'
 \examples{
 # use spk_add_deps with other htmlwidgets
 
+library(sparkline)
 library(formattable)
 
 fw <- as.htmlwidget(
@@ -38,6 +39,7 @@ spk_add_deps(fw)
 
 # use spk_add_deps with htmltools/shiny tags
 
+library(sparkline)
 library(htmltools)
 
 div <- tags$div(
