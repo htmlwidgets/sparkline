@@ -32,6 +32,32 @@ sparkline <- function(values, ..., width = 60, height = 20,
   )
 }
 
+#' Character Version of Sparklines
+#' 
+#' Create a character version ofinteractive sparklines
+#' for use with other 'htmlwidgets' or tags.
+#'
+#' @inheritParams sparkline
+#'
+#' @import htmlwidgets htmltools
+#' @export
+
+spk_chr <- function(values, ..., width = 60, height = 20,
+                      elementId = NULL, renderSelector = NULL){
+  htmltools::HTML(as.character(
+    as.tags(
+      sparkline(
+        values = values,
+        ...,
+        width = width,
+        height = height,
+        elementId = elementId,
+        renderSelector = renderSelector
+      )
+    )
+  ))
+}
+
 sparkline_html <- function(id, style, class, ...){
   htmltools::tags$span(id = id, class = class)
 }
