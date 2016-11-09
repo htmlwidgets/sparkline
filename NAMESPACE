@@ -3,6 +3,8 @@
 export(renderSparkline)
 export(sparkline)
 export(sparklineOutput)
+export(spk_add_deps)
 export(spk_chr)
 export(spk_composite)
+import(htmltools)
 import(htmlwidgets)
