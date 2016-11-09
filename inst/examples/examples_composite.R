@@ -21,10 +21,10 @@ sl2 <- sparkline(
 )
 
 # add sparkline as a composite
-addComposite(sl1, sl2)
+spk_composite(sl1, sl2)
 
 # add values and options as a composite
-addComposite(
+spk_composite(
   sl1,
   values=c(4,1,5,7,9,9,8,7,6,6,4,7,8,4,3,2,2,5,6,7),
   options = list(
@@ -37,7 +37,7 @@ addComposite(
 )
 
 # add combination of sparkline and options as a composite
-addComposite(
+spk_composite(
   sl1,
   sl2,
   options = list(

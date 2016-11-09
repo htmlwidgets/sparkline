@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @example inst/examples/examples_composite.R
-addComposite <- function(sparkline=NULL, sparklineToAdd=NULL, ...){
+spk_composite <- function(sparkline=NULL, sparklineToAdd=NULL, ...){
   stopifnot(
     !is.null(sparkline),
     inherits(sparkline,"sparkline")
