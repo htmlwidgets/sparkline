@@ -20,9 +20,10 @@ Imports:
     htmltools,
     htmlwidgets
 Suggests:
-    shiny,
+    formattable,
     knitr,
-    rmarkdown
+    rmarkdown,
+    shiny
 License: MIT + file LICENSE
 RoxygenNote: 5.0.1
 VignetteBuilder: knitr
