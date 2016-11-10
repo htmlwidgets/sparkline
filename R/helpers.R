@@ -37,5 +37,5 @@ spk_add_deps <- function(tag_htmlwidget = NULL) {
 
 #' @keywords internal
 spk_dependencies <- function(){
-  htmlwidgets:::getDependency(name="sparkline", package="sparkline")
+  htmlwidgets::getDependency(name="sparkline", package="sparkline")
 }
