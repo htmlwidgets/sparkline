@@ -27,17 +27,11 @@ spk_add_deps <- function(tag_htmlwidget = NULL) {
   # if htmlwidget then append to $dependencies
   if(inherits(tag_htmlwidget, "htmlwidget")) {
     deps <- tag_htmlwidget$dependencies
-    return(
-      utils::modifyList(
-        tag_htmlwidget,
-        list(
-          dependencies = c(
-            deps,
-            spk_dependencies()
-          )
-        )
-      )
+    tag_htmlwidget$dependencies <- c(
+      deps,
+      spk_dependencies()
     )
+    tag_htmlwidget
   }
 }
 
