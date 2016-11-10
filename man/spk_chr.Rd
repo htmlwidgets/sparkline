@@ -34,6 +34,7 @@ for use with other 'htmlwidgets' or tags.
   
   library(dplyr)
   library(sparkline)
+  library(formattable)
   
   mtcars \%>\%
     group_by(cyl) \%>\%

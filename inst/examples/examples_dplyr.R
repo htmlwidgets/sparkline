@@ -3,6 +3,7 @@
   
   library(dplyr)
   library(sparkline)
+  library(formattable)
   
   mtcars %>%
     group_by(cyl) %>%
