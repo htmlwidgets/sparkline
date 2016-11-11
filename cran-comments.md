@@ -1,3 +1,7 @@
+Resumbission 1
+
+*switching back to Ramnath as maintainer.
+
 ## Test environments
 * local Windows 10 install, R 3.3.1
 * rhub check_for_cran()
