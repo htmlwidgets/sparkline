@@ -11,11 +11,12 @@
 spk_add_deps <- function(tag_htmlwidget = NULL) {
   stopifnot(
     !is.null(tag_htmlwidget),
-    inherits(tag_htmlwidget,c("htmlwidget", "shiny.tag"))
+    inherits(tag_htmlwidget,c("htmlwidget", "shiny.tag", "shiny.tag.list",
+                              "html"))
   )
   
   # if tag use attachDependencies
-  if(inherits(tag_htmlwidget, "shiny.tag")) {
+  if (inherits(tag_htmlwidget, c("shiny.tag", "shiny.tag.list", "html"))) {
     return(
       htmltools::attachDependencies(
         tag_htmlwidget,
@@ -39,3 +40,10 @@ spk_add_deps <- function(tag_htmlwidget = NULL) {
 spk_dependencies <- function(){
   htmlwidgets::getDependency(name="sparkline", package="sparkline")
 }
+
+#' An HTML dependency for sparkline
+#' 
+#' @description An HTML dependency for sparkline
+#' 
+#' @export
+html_dependency_sparkline <- spk_dependencies
